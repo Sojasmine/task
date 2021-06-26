@@ -4,8 +4,16 @@
 <h3 class="center-align">Register</h3>
 
 <div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register')}}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register')}}" enctype="multipart/form-data">
         <div class="card-panel">
+            <!-- Profile image-->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user-plus prefix light-blue-text text-darken-4"></i>
+                    <input name="profile_image" type="file">
+                    <label for="profile_image"></label>
+                </div>
+            </div>
             <!-- username-->
             <div class="row">
                 <div class="input-field col s12">
@@ -15,6 +23,7 @@
                     <label for="username">Username</label>
                 </div>
             </div>
+            
             <!-- password-->
             <div class="row">
                 <div class="input-field col s12">

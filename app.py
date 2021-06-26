@@ -194,6 +194,13 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+    if request.method == "POST":
+        print(request.form["email"])
+    return render_template("contact.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

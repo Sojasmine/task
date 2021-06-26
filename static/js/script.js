@@ -3,12 +3,14 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
     $('.tooltipped').tooltip();
     $('select').formSelect();
+    $('input#input_text, textarea#textarea2').characterCounter();
     $('.datepicker').datepicker({
       format: "dd mmmm, yyyy",
       showClearBtn: true,
       i18n: {
         done: "Select"
       }
+      
     });
 
     validateMaterializeSelect();
@@ -40,3 +42,4 @@ $(document).ready(function(){
     }
   });
         
+  
