@@ -197,7 +197,8 @@ def delete_category(category_id):
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        print(request.form["email"])
+        flash("Thanks {}, We have received your message!".format(
+            request.form.get("name")))
     return render_template("contact.html")
 
 

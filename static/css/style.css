@@ -19,3 +19,14 @@ body, html {
     margin: 5px;
     line-height: 42px;
 }
+
+/* Override default background image */
+.contact { 
+    background-image: url('https://cdn.pixabay.com/photo/2018/01/04/09/39/literature-3060241_960_720.jpg');
+
+}
+
+/* Override default background image */
+.login {
+   background-image: url('https://cdn.pixabay.com/photo/2014/08/16/18/17/book-419589_960_720.jpg');
+}
